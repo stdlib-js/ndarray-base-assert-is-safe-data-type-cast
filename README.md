@@ -49,7 +49,7 @@ npm install @stdlib/ndarray-base-assert-is-safe-data-type-cast
 ## Usage
 
 ```javascript
-var isSafeCast = require( '@stdlib/ndarray-base-assert-is-safe/data/type-cast' );
+var isSafeCast = require( '@stdlib/ndarray-base-assert-is-safe-data-type-cast' );
 ```
 
 #### isSafeCast( from, to )
@@ -86,7 +86,7 @@ bool = isSafeCast( 'float64', 'int32' );
 
 ```javascript
 var dtypes = require( '@stdlib/ndarray-dtypes' );
-var isSafeCast = require( '@stdlib/ndarray-base-assert-is-safe/data/type-cast' );
+var isSafeCast = require( '@stdlib/ndarray-base-assert-is-safe-data-type-cast' );
 
 var DTYPES;
 var bool;
