@@ -41,7 +41,8 @@
   "dependencies": {
     "@stdlib/ndarray-dtypes": "^0.0.x",
     "@stdlib/ndarray-safe-casts": "^0.0.x",
-    "@stdlib/utils-library-manifest": "^0.0.x"
+    "@stdlib/utils-library-manifest": "^0.0.x",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.x"
   },
   "devDependencies": {
     "@stdlib/assert-is-boolean": "^0.0.x",
