@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isSafeCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-safe-data-type-cast@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-base-assert-is-safe-data-type-cast/tags). For example,
+
+```javascript
 import isSafeCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-safe-data-type-cast@v0.1.0-esm/index.mjs';
 ```
 
@@ -94,7 +99,7 @@ bool = isSafeCast( 'float64', 'int32' );
 <script type="module">
 
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@esm/index.mjs';
-import isSafeCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-safe-data-type-cast@v0.1.0-esm/index.mjs';
+import isSafeCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-safe-data-type-cast@esm/index.mjs';
 
 var DTYPES;
 var bool;
