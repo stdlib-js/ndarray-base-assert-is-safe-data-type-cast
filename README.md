@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isSafeCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-safe-data-type-cast@deno/mod.js';
+import isSafeCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-safe-data-type-cast@v0.1.0-deno/mod.js';
 ```
 
 #### isSafeCast( from, to )
@@ -89,7 +89,7 @@ bool = isSafeCast( 'float64', 'int32' );
 
 ```javascript
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-import isSafeCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-safe-data-type-cast@deno/mod.js';
+import isSafeCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-safe-data-type-cast@v0.1.0-deno/mod.js';
 
 var DTYPES;
 var bool;
