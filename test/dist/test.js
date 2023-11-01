@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,39 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var dtypes = require( '@stdlib/ndarray-dtypes' );
-var safeCasts = require( '@stdlib/ndarray-safe-casts' );
-var isSafeCast = require( './../../dist' );
-
-
-// VARIABLES //
-
-var DTYPES = dtypes();
-var SAFE_CASTS = safeCasts();
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isSafeCast, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns a boolean indicating if an ndarray data type can be safely cast to another ndarray data type', function test( t ) {
-	var expected;
-	var actual;
-	var dt;
-	var i;
-	var j;
-
-	for ( i = 0; i < DTYPES.length; i++ ) {
-		dt = DTYPES[ i ];
-		for ( j = 0; j < DTYPES.length; j++ ) {
-			expected = ( SAFE_CASTS[ dt ][ DTYPES[j] ] > 0 );
-			actual = isSafeCast( dt, DTYPES[ j ] );
-			t.strictEqual( actual, expected, 'returns expected value. from: '+dt+'. to: '+DTYPES[j]+'.' );
-		}
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
