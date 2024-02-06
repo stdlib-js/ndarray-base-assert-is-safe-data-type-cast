@@ -45,38 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-base-assert-is-safe-data-type-cast
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-isSafeCast = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-safe-data-type-cast@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var isSafeCast = require( 'path/to/vendor/umd/ndarray-base-assert-is-safe-data-type-cast/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-safe-data-type-cast@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.isSafeCast;
-})();
-</script>
+var isSafeCast = require( '@stdlib/ndarray-base-assert-is-safe-data-type-cast' );
 ```
 
 #### isSafeCast( from, to )
@@ -111,37 +105,19 @@ bool = isSafeCast( 'float64', 'int32' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-safe-data-type-cast@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var cartesianSquare = require( '@stdlib/array-cartesian-square' );
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var isSafeCast = require( '@stdlib/ndarray-base-assert-is-safe-data-type-cast' );
 
-var DTYPES;
-var bool;
-var dt;
+// Generate a list of dtype pairs:
+var dt = cartesianSquare( dtypes() );
+
+// For each data type pair, determine whether one can safely cast from one data type to another...
 var i;
-var j;
-
-// Get a list of supported ndarray data types:
-DTYPES = dtypes();
-
-// For each data type, determine whether one can safely cast to another data type...
-for ( i = 0; i < DTYPES.length; i++ ) {
-    dt = DTYPES[ i ];
-    for ( j = 0; j < DTYPES.length; j++ ) {
-        bool = isSafeCast( dt, DTYPES[ j ] );
-        console.log( '%s => %s. Safe? %s.', dt, DTYPES[ j ], bool );
-    }
+for ( i = 0; i < dt.length; i++ ) {
+    console.log( '%s. Safe? %s.', dt[i].join( ' => ' ), isSafeCast.apply( null, dt[i] ) );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -236,7 +212,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-base-assert-is-safe-data-type-cast/main/LICENSE
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/umd
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
 
 </section>
 
