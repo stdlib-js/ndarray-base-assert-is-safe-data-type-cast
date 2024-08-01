@@ -39,12 +39,12 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/ndarray-dtypes": "^0.2.1",
-    "@stdlib/ndarray-safe-casts": "^0.2.1",
+    "@stdlib/ndarray-dtypes": "^0.3.0",
+    "@stdlib/ndarray-safe-casts": "^0.3.0",
     "@stdlib/utils-library-manifest": "^0.2.2"
   },
   "devDependencies": {
-    "@stdlib/array-cartesian-square": "^0.2.1",
+    "@stdlib/array-cartesian-square": "^0.2.2",
     "@stdlib/assert-is-boolean": "^0.2.2",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
