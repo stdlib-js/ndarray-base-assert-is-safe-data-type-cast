@@ -43,7 +43,8 @@
     "@stdlib/ndarray-dtypes": "^0.3.0",
     "@stdlib/ndarray-safe-casts": "^0.3.0",
     "@stdlib/types": "^0.4.3",
-    "@stdlib/utils-library-manifest": "^0.2.2"
+    "@stdlib/utils-library-manifest": "^0.2.2",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
     "@stdlib/array-cartesian-square": "^0.2.2",
