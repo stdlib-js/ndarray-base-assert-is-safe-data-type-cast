@@ -107,7 +107,7 @@ bool = isSafeCast( 'float64', 'int32' );
 
 ```javascript
 var cartesianSquare = require( '@stdlib/array-cartesian-square' );
-var dtypes = require( '@stdlib/ndarray-dtypes' );
+var dtypes = require( '@stdlib/ndarray-base-dtype-strings' );
 var isSafeCast = require( '@stdlib/ndarray-base-assert-is-safe-data-type-cast' );
 
 // Generate a list of dtype pairs:
