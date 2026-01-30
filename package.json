@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-base-assert-is-safe-data-type-cast",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Determine if an ndarray data type can be safely cast to another ndarray data type.",
   "license": "Apache-2.0",
   "author": {
@@ -41,7 +41,7 @@
   "dependencies": {
     "@stdlib/ndarray-base-dtype-resolve-str": "^0.2.2",
     "@stdlib/ndarray-dtypes": "^0.3.0",
-    "@stdlib/ndarray-safe-casts": "^0.3.0",
+    "@stdlib/ndarray-safe-casts": "^0.4.0",
     "@stdlib/types": "^0.4.3",
     "@stdlib/utils-library-manifest": "^0.2.3"
   },
@@ -50,7 +50,7 @@
     "@stdlib/assert-is-boolean": "^0.2.2",
     "@stdlib/dstructs-struct": "github:stdlib-js/dstructs-struct#main",
     "@stdlib/ndarray-base-dtype-str2enum": "^0.2.2",
-    "@stdlib/ndarray-base-dtype-strings": "github:stdlib-js/ndarray-base-dtype-strings#main",
+    "@stdlib/ndarray-base-dtype-strings": "^0.1.0",
     "@stdlib/ndarray-dtype-ctor": "github:stdlib-js/ndarray-dtype-ctor#main",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
