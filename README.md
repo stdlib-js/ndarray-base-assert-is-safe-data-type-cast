@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isSafeCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-safe-data-type-cast@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-base-assert-is-safe-data-type-cast/tags). For example,
+
+```javascript
 import isSafeCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-safe-data-type-cast@v0.3.1-deno/mod.js';
 ```
 
@@ -90,7 +95,7 @@ bool = isSafeCast( 'float64', 'int32' );
 ```javascript
 import cartesianSquare from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-cartesian-square@deno/mod.js';
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-strings@deno/mod.js';
-import isSafeCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-safe-data-type-cast@v0.3.1-deno/mod.js';
+import isSafeCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-safe-data-type-cast@deno/mod.js';
 
 // Generate a list of dtype pairs:
 var dt = cartesianSquare( dtypes() );
